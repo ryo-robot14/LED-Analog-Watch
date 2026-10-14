@@ -56,17 +56,6 @@ PCBの設計では、LEDの配置や視認性だけでなく、ケース内部�
 
 72個のLEDを円形に配置し、マイコンとRTCを用いて時刻を表示する腕時計が製作されています。公開されている設計情報から、LED配置、電子回路、基板設計、ファームウェア、市販時計ケースへの組み込み方法などを参考にします。
 
-**参考プロジェクトの主な構成**
-
-- 72個のLEDによる円形表示
-- ATmega328Pマイコン
-- DS3231系RTC
-- 直径約40 mmの円形PCB
-- 市販のステンレス製時計ケース
-- Arduinoスケッチによる制御
-
-本プロジェクトでは、これらの情報を参考にしながら、独自の回路・PCB・ファームウェア・金属製ケースを設計します。参考プロジェクトの設計データをそのまま自作成果物として扱うことはしません。
-
 ## リポジトリ構成
 
 ```text
@@ -93,7 +82,12 @@ LED-Analog-Watch/
 
 |No.|Ref.|Name|QTY|URL|
 |---|---|---|---|---
-|001|
+|001|---|ATMega328P-AU|1|[秋月電子](https://akizukidenshi.com/catalog/g/g104386/)|
+|002|---|RX8900CE UA|1|[秋月電子](https://akizukidenshi.com/catalog/g/g113320)|
+|003|---|FA238|1|[秋月電子](https://akizukidenshi.com/catalog/g/g102457/)|
+|004|---|BHSD-2032-SM|1|[秋月電子](https://akizukidenshi.com/catalog/g/g112892/)|
+|005|---|BHSD-2032-COVER|1|[秋月電子](https://akizukidenshi.com/catalog/g/g112894)|
+|006|---|SSAJ120100|1|[秋月電子](https://akizukidenshi.com/catalog/g/g113989/)|
 
 ## 使用ソフト
 
@@ -101,7 +95,3 @@ LED-Analog-Watch/
 - KiCAD
 - Arduino IDE
 - Visual Studio Code
-
-## ライセンス
-
-本プロジェクトのライセンスは未定です。回路図、PCB設計データ、ファームウェア、CADデータの公開範囲と再利用条件を整理したうえで決定します。
